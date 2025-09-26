@@ -1,12 +1,10 @@
-# Chatbot Platform — Backend
+# Chatbot Platform — Frontend (Next.js minimal)
 
 ## Quickstart
 ```bash
-cd chatbot-platform-backend
+cd chatbot-platform-frontend
 npm install
-cp .env.example .env   # fill in DATABASE_URL, JWT_SECRET, OPENAI_API_KEY
-npx prisma generate
-npx prisma migrate dev --name init
+echo "NEXT_PUBLIC_API_URL=http://localhost:3001" > .env.local
 npm run dev
 ```
-Health check: http://localhost:3001/health
+Open http://localhost:3000
